@@ -1,0 +1,11 @@
+.across {
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+}
+
+.rev-across {
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.shadow-2 {
+    box-shadow: 8px 10px 8px 8px rgba(0, 0, 0, 0.2);
+}
