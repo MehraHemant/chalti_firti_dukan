@@ -8,19 +8,29 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./tailwind.js" type="text/javascript"></script>
   <script src="./styles.js" type="text/javascript"></script>
-  <title>Document</title>
+  <title>Chalti Firti Dukan</title>
 </head>
 
 <body>
   <!-- 1. Navigation bar -->
-  <header class="">
+  <header class="sticky top-0 z-50 bg-white/60 backdrop-blur-3xl drop-shadow-xl">
     <div class="min-h-16 flex justify-center bg-primary w-full">
       <div class="font-bold text-lg">CHALTI FIRTI DUKAN</div>
     </div>
-    <div id="header" class="flex py-2 max-w-3xl font-semibold justify-between mx-auto *:px-2">
-      <a href="#header" class="selected">Home</a>
+    <div id="header" class="flex py-2 max-w-3xl font-semibold justify-between mx-auto *:px-2 px-2">
+      <a href="#" class="selected">Home</a>
       <a href="#" class="max-lg:hidden">Humari Pehchan</a>
-      <a href="#" class="">Services</a>
+      <div class="group h-full relative">
+        <span class="py-2 cursor-pointer" onclick="handleNavItemClick(event)" id="services">Services</span>
+        <div id="dropdown" class="bg-white z-10 top-7 absolute text-black shadow-lg *:border-b flex hidden flex-col">
+          <a href="/services-btl.html" class="px-4 py-3 hover:bg-secondary hover:text-black text-nowrap">BTL
+            Services</a>
+          <a href="/services-dm.html" class="px-4 py-3 hover:bg-secondary hover:text-black text-nowrap">Digital
+            Marketing Services</a>
+          <a href="/services-atl.html" class="px-4 py-3 hover:bg-secondary hover:text-black text-nowrap">ATL
+            Services</a>
+        </div>
+      </div>
       <a href="#" class="">Case Study</a>
       <a href="#" class="">Blog</a>
       <a href="#" class="max-lg:hidden">Let's Connect</a>
@@ -29,112 +39,49 @@
 
   <div class="text-white">
     <!-- 2. Hero section -->
-    <section id="default-carousel" class="relative w-full" data-carousel="slide">
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/images/image-(1).jpg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/images/image-(2).jpg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/images/image-(3).jpg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/images/image-(4).jpg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 5 -->
-        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-5.svg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div> -->
-        <!-- Slider controls -->
-        <button type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev>
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M5 1 1 5l4 4" />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button"
-          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next>
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 9 4-4-4-4" />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-    </section>
+   <img class="w-full" src="./images/gadi.png" alt="gadi"/>
 
-    <div class="bg-transparent h-40">
-      <div class="rev-across bg-primary h-full"></div>
-    </div>
     <!-- 3. Introduction -->
     <section class="bg-primary py-4">
-      <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-6">
-        <h2 class="text-6xl text-secondary font-extrabold max-lg:text-4xl max-md:text-3xl max-lg:font-bold uppercase">
+      <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-4">
+        <h2 class="text-6xl text-secondary font-extrabold max-lg:text-4xl max-md:text-3xl pt-3 max-lg:font-bold uppercase">
           Humari Pehchan</h2>
-        <div class="w-96 max-lg:w-52 h-1 max-lg:h-0.5 max bg-secondary"></div>
+        <div class="w-96 max-lg:w-52 h-1 max-lg:h-0.5 bg-secondary"></div>
       </div>
-      <div class="max-w-6xl mx-auto flex flex-col items-center py-3">
-        <h4 class="text-xl/tight max-md:text-lg/6 flex flex-col text-center max-w-3xl">
+      <div class="max-w-screen-lg px-1 mx-auto flex flex-col items-center">
+        <h4 class="text-xl/tight max-md:text-lg/6 flex flex-col text-center">
           We are a Complete Brand Experience Agency, transforming casual spectators into loyal followers of the brand.
           We aim to engage hearts and minds of the focussed target-audience with your brand. We create engaging and more
           meaningful ideas to interact with the target audience and connect them with the brand in a more realistic way
-          <strong>"We plan
-            for Planes to Take off"</strong>
+          <strong>"We plan for Planes to Take off"</strong>
 
         </h4>
         <h3 class="text-4xl max-md:text-2xl text-center font-semibold mt-6">Introducing Store on Wheels</h3>
-        <h4 class="max-w-sm text-3xl max-md:text-2xl/7 font-thin text-center my-2">
+        <h4 class="text-3xl max-md:text-2xl/7 font-thin text-center my-2">
           Revolutionizing Retail with Mobile Convenience.
         </h4>
         <h4 class="italic text-3xl font-semibold mb-2 max-md:text-2xl/7 text-center">Welcome to the future of Retail!
         </h4>
-        <h5 class="text-xl/tight max-md:text-lg/6 max-w-3xl text-center"><strong>CFD</strong> is here to redefine the
+        <h5 class="text-xl/tight max-md:text-lg/6 text-center"><strong>CFD</strong> is here to redefine the
           way brands engage with their customers. Our innovative concept combines the mobility of vehicles with the
           functionality of a traditional store, creating a seamless shopping experience that meets consumers where they
           are.</h5>
       </div>
     </section>
-
-    <div class="bg-secondary h-40">
+    <div class="bg-secondary max-lg:h-10 h-28">
       <div class="across bg-primary h-full"></div>
     </div>
-    <section id="">
-
+    <section class="bg-secondary flex s-full justify-center">
+      <img src="images/gadi_details.png" alt="gadi details" />
     </section>
-    <div class="bg-secondary h-40">
+    <div class="bg-secondary max-lg:h-10 h-28">
       <div class="rev-across bg-primary h-full"></div>
     </div>
     <!-- TEAM section -->
     <section class="bg-primary py-10 px-40 max-lg:px-20">
       <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-6">
         <h2 class="text-6xl text-secondary font-extrabold max-lg:text-4xl max-lg:font-bold uppercase">Teams</h2>
-        <div class="w-24 h-1 max-lg:h-0.5 max bg-secondary mb-6"></div>
+        <div class="w-24 h-1 max-lg:h-0.5 bg-secondary mb-6"></div>
         <div class="flex gap-x-1">
           <div class="team-member-card">
             <img src="" class="avatar" alt="avatar" />
@@ -147,7 +94,7 @@
 
 
 
-    <div class="bg-secondary h-40">
+    <div class="bg-secondary max-lg:h-10 h-28">
       <div class="across bg-primary h-full"></div>
     </div>
     <!-- Services Section -->
@@ -155,7 +102,7 @@
       <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-6">
         <h2 class="text-6xl text-primary font-extrabold max-lg:text-4xl max-md:text-3xl max-lg:font-bold uppercase">
           services</h2>
-        <div class="w-48 max-lg:w-28 h-1 max-lg:h-0.5 max bg-primary"></div>
+        <div class="w-48 max-lg:w-28 h-1 max-lg:h-0.5 bg-primary"></div>
       </div>
 
       <div class="grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-3">
@@ -168,7 +115,7 @@
             <p class="text-lg px-3 text-center">
               Your brand on wheels bringing businesses closer to customers with mobile promotion like never before.
             </p>
-            <button class="primary-btn group"><span class="max-md:text-base">know more</span>
+            <button class="primary-btn mx-auto group"><span class="max-md:text-base">know more</span>
               <?xml version="1.0" encoding="iso-8859-1"?>
               <svg class="fill-white group-hover:fill-black" height="20px" width="20px" version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
@@ -190,7 +137,8 @@
               Directly engage your audience with personalized, on-ground marketing solutions that leave a lasting
               impression.
             </p>
-            <button class="primary-btn group"><span class="max-md:text-base">know more</span>
+            <a href="services-btl.html" class="primary-btn mx-auto group"><span class="max-md:text-base">know
+                more</span>
               <?xml version="1.0" encoding="iso-8859-1"?>
               <svg class="fill-white group-hover:fill-black" height="20px" width="20px" version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
@@ -199,7 +147,7 @@
                 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
                 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -211,7 +159,7 @@
             <p class="text-lg max-md:text-base text-center">
               Reach your masses with high impact strategic campaigns across a variety of media channels
             </p>
-            <button class="primary-btn group"><span class="max-md:text-base">know more</span>
+            <button class="primary-btn mx-auto group"><span class="max-md:text-base">know more</span>
               <?xml version="1.0" encoding="iso-8859-1"?>
               <svg class="fill-white group-hover:fill-black" height="20px" width="20px" version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
@@ -233,7 +181,7 @@
               Amplify your brand;s presence online with cutting-edge digital marketing strategies that connect and
               convert.
             </p>
-            <button class="primary-btn group"><span class="max-md:text-base">know more</span>
+            <button class="primary-btn mx-auto group"><span class="max-md:text-base">know more</span>
               <?xml version="1.0" encoding="iso-8859-1"?>
               <svg class="fill-white group-hover:fill-black" height="20px" width="20px" version="1.1" id="Layer_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
@@ -248,14 +196,14 @@
       </div>
     </section>
 
-    <div class="bg-secondary h-40">
+    <div class="bg-secondary max-lg:h-10 h-28">
       <div class="rev-across bg-primary h-full"></div>
     </div>
     <section id="testimonial" class="flex flex-col items-center px-40 max-lg:px-10 max-md:px-6 bg-primary pb-10">
       <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-6">
         <h2 class="text-6xl text-secondary font-extrabold max-lg:text-4xl max-md:text-3xl max-lg:font-bold uppercase">
           testimonial</h2>
-        <div class="w-48 max-lg:w-32 h-1 max-lg:h-0.5 max bg-secondary"></div>
+        <div class="w-48 max-lg:w-32 h-1 max-lg:h-0.5 bg-secondary"></div>
       </div>
       <div
         class="bg-secondary shadow-2 max-lg:max-w-lg max-w-2xl w-full font-medium rounded-tr-[80px] rounded-bl-[80px] flex flex-col text-primary py-6 relative">
@@ -286,28 +234,71 @@
     </section>
 
 
-    <div class="bg-white h-40">
+    <div class="bg-white max-lg:h-10 h-28">
       <div class="across bg-primary h-full"></div>
     </div>
     <section id="clients" class="bg-white pb-4">
       <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-6">
         <h2 class="text-6xl text-primary font-extrabold max-lg:text-4xl max-md:text-3xl max-lg:font-bold uppercase">
           clients</h2>
-        <div class="w-36 max-lg:w-24 h-1 max-lg:h-0.5 max bg-primary"></div>
+        <div class="w-36 max-lg:w-24 h-1 max-lg:h-0.5 bg-primary"></div>
       </div>
-      <div class="mx-4 mt-4 border border-primary rounded-2xl h-20"></div>
+      <div class="mx-4 mt-4 border border-primary rounded-2xl h-20 max-w-screen-lg mx-auto"></div>
     </section>
 
     <section id="contact-us" class="bg-white py-8">
       <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 pb-6">
         <h2 class="text-6xl text-primary font-extrabold max-lg:text-4xl max-md:text-3xl max-lg:font-bold uppercase">
           contact us</h2>
-        <div class="w-44 max-lg:w-36 h-1 max-lg:h-0.5 max bg-primary"></div>
+        <div class="w-44 max-lg:w-36 h-1 max-lg:h-0.5 bg-primary"></div>
       </div>
-      <form class="max-w-80 mx-auto px-8 py-4 bg-primary">
-        <input type="email" placeholder="Enter your email address" class="border bg-secondary w-full border-primary rounded-lg placeholder:text-primary/60 px-3 py-2 outline-none"/>
-
+      <div class="italic text-3xl max-lg:text-2xl max-md:text-lg  text-black text-center my-6">
+        <h5 class="font-bold">Ready to take your brand on the move ?</h5>
+        <h5 class="">Let's connect and make it happen!</h5>
+      </div>
+      <form class="text-black max-w-lg mx-auto flex flex-col gap-4 px-8 max-md:px-3 py-12 bg-primary" onsubmit="">
+        <div class="flex items-center">
+          <label for="name" class="basis-28 text-white">Name</label>
+          <input type="email" name="name" placeholder="Enter your Full Name"
+            class="border bg-secondary w-full border-primary rounded-lg placeholder:text-primary/60 px-3 py-2 outline-none" />
+        </div>
+        <div class="flex items-center">
+          <label for="phone" class="basis-28 text-white">Phone No.</label>
+          <input type="tel" name="phone" placeholder="Enter your Mobile Number"
+            class="border bg-secondary w-full border-primary rounded-lg placeholder:text-primary/60 px-3 py-2 outline-none" />
+        </div>
+        <div class="flex items-center">
+          <label for="email" class="basis-28 text-white">Email ID</label>
+          <input type="email" name="email" placeholder="Enter your email address"
+            class="border bg-secondary w-full border-primary rounded-lg placeholder:text-primary/60 px-3 py-2 outline-none" />
+        </div>
+        <div class="flex items-start">
+          <label for="message" class="text-white basis-28">Message</label>
+          <textarea name="message" placeholder="Enter your message here"
+            class="border bg-secondary w-full border-primary rounded-lg placeholder:text-primary/60 px-3 py-2 outline-none"></textarea>
+        </div>
+        <button type="submit" class="primary-btn rounded-md text-white mt-3 ms-24">Submit</button>
       </form>
+    </section>
+
+
+    <div class="bg-white max-lg:h-10 h-28">
+      <div class="rev-across bg-primary h-full"></div>
+    </div>
+    <section class="bg-primary pb-10">
+      <div class="flex gap-5 justify-center italic">
+        <div class="flex gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <h3>care@vistaar.media</h3>
+        </div>
+        <h3>info@chaltifirtidukan</h3>
+      </div>
     </section>
   </div>
 
