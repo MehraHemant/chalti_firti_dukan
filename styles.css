@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lexend+Deca&display=swap');
 
-
-
-
 * {
     scroll-behavior: smooth;
 }
@@ -30,6 +27,10 @@
 
 .shadow-3 {
     box-shadow: 10px -10px #FF92C9;
+    &:hover {
+        box-shadow: 5px -5px #FF92C9;
+    }
+    transition: all 0.1s linear;
 }
 
 .drop-1 {
