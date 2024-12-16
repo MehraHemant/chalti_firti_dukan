@@ -9,7 +9,10 @@ tailwind.config = {
           secondary: '#FF92C9'
         },
         fontFamily: {
-          'rubik-dirt': ['Rubik Dirt', 'system-ui']
+          'rubik-dirt': ['"Rubik Dirt"', 'system-ui'],
+          'didact': ['"Didact Gothic"', 'sans'],
+          'body': ['Montserrat', 'sans'],
+          'sans': ['Montserrat', 'sans']
         }
       }
     }
