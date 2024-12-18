@@ -17,24 +17,24 @@
         <div class="bg-primary h-12 w-full"></div>
         <img src="/images/CFD-Logo.png" class="absolute top-1.5 h-16" alt="logo" />
       </div>
-      <div id="header" class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2">
+      <div id="header" class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2 max-sm:text-xs">
         <a href="#" class="selected">Home</a>
-        <a href="#" class="max-lg:hidden">Humari Pehchan</a>
+        <a href="about.html" class="max-lg:hidden">Humari Pehchan</a>
         <div class="group relative h-full">
           <span class="cursor-pointer py-2" onclick="handleNavItemClick(event)" id="services">Services</span>
-          <div id="dropdown" class="absolute top-7 z-10 flex hidden flex-col bg-white text-black shadow-lg *:border-b">
-            <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3 hover:text-black">BTL Services</a>
-            <a href="/services-dm.html" class="hover:bg-secondary text-nowrap px-4 py-3 hover:text-black">Digital Marketing Services</a>
-            <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3 hover:text-black">ATL Services</a>
+          <div id="dropdown" class="absolute top-7 z-10 flex hidden flex-col bg-white/90 text-black shadow-lg *:border-b max-sm:top-6">
+            <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3">BTL Services</a>
+            <a href="/services-dm.html" class="hover:bg-secondary text-nowrap px-4 py-3">Digital Marketing Services</a>
+            <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3">ATL Services</a>
           </div>
         </div>
-        <a href="#" class="">Case Study</a>
+        <a href="about.html" class="">Case Study</a>
         <a href="#" class="">Blog</a>
         <a href="#" class="max-lg:hidden">Let's Connect</a>
       </div>
     </header>
 
-    <div class="text-slate-200">
+    <div class="text-slate-300">
       <!-- 2. Hero section -->
       <img class="w-full" src="./images/gadi.png" alt="gadi" />
 
@@ -109,7 +109,7 @@
             </div>
           </div>
 
-          <div class="flex min-w-40 flex-col items-center justify-center gap-10 bg-blue-900 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
+          <div class="flex min-w-40 flex-col items-center justify-center gap-10 bg-cyan-700 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
             <div class="h-14 w-14 rounded-full bg-cyan-800"></div>
             <h3 class="card-heading">BTL</h3>
             <div class="flex flex-col gap-6">
@@ -121,7 +121,7 @@
             </div>
           </div>
 
-          <div class="flex min-w-40 flex-col items-center justify-center gap-10 bg-blue-900 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
+          <div class="flex min-w-40 flex-col items-center justify-center gap-10 bg-purple-700 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
             <div class="h-14 w-14 rounded-full bg-blue-950"></div>
             <h3 class="card-heading">ATL</h3>
             <div class="flex flex-col gap-6">
@@ -145,7 +145,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-5 flex flex-wrap items-center justify-center gap-x-12 max-md:mt-3 max-md:gap-x-8">
+        <div class="mt-5 flex flex-wrap items-center justify-center gap-x-12 max-md:mt-3 max-md:gap-x-4 max-sm:gap-y-2">
           <img src="/images/logo/Expand.png" class="max-w-xs object-contain max-lg:max-w-64 max-md:max-w-32" alt="expand" />
           <img src="/images/logo/Explore.png" class="mt-6 max-w-xs object-contain max-md:mt-2 max-md:max-w-32" alt="expand" />
           <img src="/images/logo/Experience.png" class="max-w-xs object-contain max-md:max-w-32" alt="expand" />
@@ -200,10 +200,21 @@
       <section id="clients" class="bg-white pb-4">
         <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
           <h2 class="text-primary heading">clients</h2>
-          <div class="bg-primary h-1 w-36 max-lg:h-0.5 max-lg:w-24"></div>
-        </div>
-        <div class="px-6">
-          <div class="border-primary mx-auto mt-4 h-20 max-w-screen-lg rounded-2xl border"></div>
+          <div
+            class="*:object-fit mx-auto mt-4 flex max-w-screen-lg flex-wrap items-center justify-center gap-12 rounded-2xl border border-primary max-md:mx-2 px-6 py-8 *:w-40 max-md:*:w-28 max-sm:gap-x-4 max-sm:gap-y-2.5 max-sm:px-3"
+          >
+            <img src="/images/clients/avon_cycles.png" alt="avon-cycles" />
+            <img src="/images/clients/bonn.png" alt="bonn" />
+            <img src="/images/clients/kurlon.png" alt="kurlon" />
+            <img src="/images/clients/rungtas.png" alt="rungtas" />
+            <img src="/images/clients/lqintimo.png" alt="lqintimo" />
+            <img src="/images/clients/myntra.png" alt="myntra" />
+            <img src="/images/clients/bazaar_kolkata.png" alt="bazaar-kolkata" />
+            <img src="/images/clients/ikea.png" alt="ikea" />
+            <img src="/images/clients/livfast.png" alt="livfast" />
+            <img src="/images/clients/girdhar.png" alt="girdhar" />
+            <img src="/images/clients/colorbar.png" alt="colorbar" />
+          </div>
         </div>
       </section>
 
@@ -216,41 +227,22 @@
           <h5 class="text-xl/5 font-bold max-sm:text-base/4">Ready to take your brand on the move?</h5>
           <h5 class="pt-4 text-lg/5 max-sm:pt-2 max-sm:text-base/4">Let's connect and make it happen!</h5>
         </div>
-        <form class="bg-primary mx-auto flex max-w-lg flex-col max-sm:text-sm gap-4 px-8 py-12 text-black max-md:px-3" onsubmit="">
+        <form class="bg-primary mx-auto flex max-w-lg flex-col gap-4 px-8 py-12 text-black max-md:px-3 max-sm:text-sm" onsubmit="">
           <div class="flex items-center">
             <label for="name" class="basis-28 text-slate-200">Name</label>
-            <input
-              type="email"
-              name="name"
-              placeholder="Enter your Full Name"
-              class="input-field"
-            />
+            <input type="email" name="name" placeholder="Enter your Full Name" class="input-field" />
           </div>
           <div class="flex items-center">
             <label for="phone" class="basis-28 text-slate-200">Phone No.</label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Enter your Mobile Number"
-              class="input-field"
-            />
+            <input type="tel" name="phone" placeholder="Enter your Mobile Number" class="input-field" />
           </div>
           <div class="flex items-center">
             <label for="email" class="basis-28 text-slate-200">Email ID</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email address"
-              class="input-field"
-            />
+            <input type="email" name="email" placeholder="Enter your email address" class="input-field" />
           </div>
           <div class="flex items-start">
             <label for="message" class="basis-28 text-slate-200">Message</label>
-            <textarea
-              name="message"
-              placeholder="Enter your message here"
-              class="input-field"
-            ></textarea>
+            <textarea name="message" placeholder="Enter your message here" class="input-field"></textarea>
           </div>
           <button type="submit" class="primary-btn ms-24 mt-3 rounded-md text-slate-200">Submit</button>
         </form>
