@@ -22,34 +22,15 @@ document.head.appendChild(
          @apply px-3 text-center text-lg max-sm:text-base/5;
         }
         .primary-btn {
-         @apply uppercase border-2 hover:bg-[#FF92C9] hover:border-black hover:shadow-2xl w-fit px-3 py-2 tracking-widest font-semibold flex items-center gap-3  duration-300 transition-all ease-in-out;
+         @apply uppercase border-2 hover:bg-[#FF92C9] hover:border-black hover:shadow-2xl w-fit px-3 py-2 tracking-widest font-semibold flex items-center gap-3 duration-300 transition-all ease-in-out;
         }
         .input-field{
         @apply bg-secondary border-primary placeholder:text-primary/60 w-full rounded-lg px-3 py-2 outline-none max-sm:bg-secondary/20 max-sm:rounded-none max-sm:border-b max-sm:border-secondary max-sm:placeholder:text-secondary
+        }
+        .case-study-card {
+        @apply w-64 min-w-64 max-md:text-base text-nowrap bg-white py-1 text-center text-lg font-medium uppercase;
         }
       }
       `,
   })
 );
-
-const services = document.getElementById("services");
-
-function handleNavItemClick(e) {
-  e.preventDefault();
-  console.log("handleNavItemClicked", e);
-  const dropdown = document.getElementById("dropdown");
-  dropdown.classList.toggle("hidden");
-}
-
-document.addEventListener('click', function handleClickOutsideBox(event) {
-  const dropdown = document.getElementById('dropdown');
-  const services = document.getElementById('services');
-  
-  if (
-    dropdown &&
-    !dropdown.contains(event.target) &&
-    (!services || !services.contains(event.target))
-  ) {
-    dropdown.classList.add('hidden');
-  }
-});

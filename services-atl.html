@@ -17,11 +17,18 @@
     <div class="min-h-16 flex justify-center bg-primary w-full">
       <div class="font-bold text-lg">CHALTI FIRTI DUKAN</div>
     </div>
-    <div id="header" class="flex py-2 max-w-3xl font-semibold justify-between mx-auto *:px-2">
-      <a href="index.html" class="">Home</a>
-      <a href="#" class="max-lg:hidden">Humari Pehchan</a>
-      <a href="index.html#services" class="selected">Services</a>
-      <a href="#" class="">Case Study</a>
+    <div id="header" class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2 max-sm:text-xs">
+      <a href="#" class="selected">Home</a>
+      <a href="about.html" class="max-lg:hidden">Humari Pehchan</a>
+      <div class="group relative h-full">
+        <span class="cursor-pointer py-2" onclick="handleNavItemClick(event)" id="services">Services</span>
+        <div id="dropdown" class="absolute top-7 z-10 flex hidden flex-col bg-white/90 text-black shadow-lg *:border-b max-sm:top-6">
+          <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3">BTL Services</a>
+          <a href="/services-dm.html" class="hover:bg-secondary text-nowrap px-4 py-3">Digital Marketing Services</a>
+          <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3">ATL Services</a>
+        </div>
+      </div>
+      <a href="about.html" class="">Case Study</a>
       <a href="#" class="">Blog</a>
       <a href="#" class="max-lg:hidden">Let's Connect</a>
     </div>
@@ -258,6 +265,7 @@
       </div>
     </div>
   </section>
+  <script src="./script.js" type="text/javascript"></script>
 </body>
 
 </html>
