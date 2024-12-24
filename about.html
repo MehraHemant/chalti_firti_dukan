@@ -32,7 +32,7 @@
       </div>
     </header>
 
-    <section class="bg-primary py-4">
+    <section class="bg-primary">
       <div class="flex flex-col items-center gap-3 pb-4 max-lg:gap-1 max-md:gap-1 max-md:pb-2">
         <h2 class="text-secondary heading"> About</h2>
         <div class="bg-secondary h-1 w-32 max-lg:h-0.5 max-lg:w-16"></div>
@@ -65,7 +65,7 @@
       <div class="rev-across bg-primary h-28 max-lg:h-10"></div>
     </section>
 
-    <section id="benefits" class="bg-primary pb-10">
+    <section id="benefits" class="bg-primary">
       <div class="flex flex-col items-center gap-3 pb-4 max-lg:gap-1 max-md:gap-1 max-md:pb-2">
         <h2 class="text-secondary heading">benefits</h2>
         <div class="bg-secondary h-1 w-40 max-lg:h-0.5 max-lg:w-20"></div>
@@ -120,25 +120,61 @@
         </div>
       </div>
     </section>
-    <section id="case-study" class="bg-secondary pb-10">
+    <section id="case-study" class="bg-secondary">
       <div class="across bg-primary h-28 max-lg:h-10"></div>
       <div class="flex flex-col items-center gap-3 pb-4 max-lg:gap-1 max-md:gap-1 max-md:pb-2">
         <h2 class="text-primary heading">case study</h2>
         <div class="bg-primary h-1 w-60 max-lg:h-0.5 max-lg:w-32"></div>
-        <div id="slider" class="flex w-full items-center justify-center gap-4 mt-10">
-          <div id="prev" class="text-white cursor-pointer text-4xl font-extrabold font-serif max-md:text-2xl">&lt;</div>
-          <div class="flex w-64 justify-center overflow-hidden relative">
-            <div id="carousel" class="flex w-full relative top-0">
-              <div class="case-study-card slide"> brand enhancement </div>
-              <div class="case-study-card slide"> brand exposure </div>
-              <div class="case-study-card slide"> innovating marketing</div>
-            </div>
+      </div>
+      <div id="slider" class="mt-10 flex w-full items-center justify-center gap-4">
+        <img id="prev" src="/images/icons/left-arrow.png" class="w-7 cursor-pointer" alt="left-arrow" />
+        <div class="relative flex w-56 justify-center overflow-hidden">
+          <div id="carousel" class="relative top-0 flex w-full">
+            <div class="case-study-card slide"> brand enhancement </div>
+            <div class="case-study-card slide"> brand exposure </div>
+            <div class="case-study-card slide"> innovating marketing</div>
           </div>
-          <div id="next" class="text-white cursor-pointer text-4xl font-extrabold font-serif max-md:text-2xl">&gt;</div>
+        </div>
+        <img id="next" src="/images/icons/left-arrow.png" class="w-7 rotate-180 cursor-pointer" alt="right-arrow" />
+      </div>
+      <div id="image-wrapper" class="relative mx-auto py-4 w-full max-w-2xl overflow-hidden">
+        <div id="image-slider" class="flex w-full">
+          <div id="brand-enhancement" class="grid w-full grid-cols-3 gap-6 px-4 py-2 *:rounded-md max-sm:grid-cols-2 max-sm:gap-3">
+            <img src="/images/case_study/brand_enhancement_(1).jpeg" alt="brand_enhancement_1" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_enhancement_(3).jpeg" alt="brand_enhancement_3" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_enhancement_(4).jpeg" alt="brand_enhancement_4" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_enhancement_(5).jpeg" alt="brand_enhancement_5" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_enhancement_(6).jpeg" alt="brand_enhancement_6" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_enhancement_(7).jpeg" alt="brand_enhancement_7" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+          </div>
+          <div id="brand-enhancement" class="hidden w-full grid-cols-3 gap-6 px-4 py-2 *:rounded-md max-sm:grid-cols-2 max-sm:gap-3">
+            <img src="/images/case_study/brand_exposure_(1).jpg" alt="brand_exposure_1" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_exposure_(3).jpg" alt="brand_exposure_3" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_exposure_(4).jpg" alt="brand_exposure_4" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_exposure_(5).jpg" alt="brand_exposure_5" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_exposure_(6).jpg" alt="brand_exposure_6" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/brand_exposure_(7).jpg" alt="brand_exposure_7" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+          </div>
+          <div id="brand-enhancement" class="hidden w-full grid-cols-3 gap-6 px-4 py-2 *:rounded-md max-sm:grid-cols-2 max-sm:gap-3">
+            <img src="/images/case_study/innovating_marketing_(1).jpg" alt="innovating_marketing_1" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/innovating_marketing_(2).jpg" alt="innovating_marketing_2" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/innovating_marketing_(3).jpg" alt="innovating_marketing_3" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/innovating_marketing_(4).jpg" alt="innovating_marketing_4" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/innovating_marketing_(5).jpg" alt="innovating_marketing_5" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+            <img src="/images/case_study/innovating_marketing_(6).jpg" alt="innovating_marketing_6" class="aspect-square object-cover object-bottom shadow-md shadow-black/40" />
+          </div>
         </div>
       </div>
     </section>
-   
+    <section id="costing-plan" class="bg-secondary pt-10">
+      <div class="flex flex-col items-center gap-3 pb-4 max-lg:gap-1 max-md:gap-1 max-md:pb-2">
+        <h2 class="text-primary heading">costing plan</h2>
+        <div class="bg-primary h-1 w-60 max-lg:h-0.5 max-lg:w-32"></div>
+      </div>
+      <div class="flex max-w-2xl mx-auto">
+        
+      </div>
+    </section>
     <script src="/script.js" type="text/javascript"></script>
   </body>
 </html>

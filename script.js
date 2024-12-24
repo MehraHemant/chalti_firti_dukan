@@ -33,29 +33,51 @@ const updateCarousel = () => {
 
 // Move to next slide
 const nextSlide = () => {
+  let oldIndex = index;
   if (index >= totalSlides - 1) {
     carousel.style.transition = 'none';
     index = 0;
     updateCarousel();
+    updateImageSlider(oldIndex);
   } else {
     carousel.style.transition = 'transform 0.5s ease-in-out';
-    index++;
+    index+=1;
     updateCarousel();
+    updateImageSlider(oldIndex);
   }
 };
 
 // Move to previous slide
 const prevSlide = () => {
+  let oldIndex = index;
   if (index <= 0) {
     carousel.style.transition = 'none';
     index = totalSlides - 1;
     updateCarousel();
+    updateImageSlider(oldIndex);
   } else {
     carousel.style.transition = 'transform 0.5s ease-in-out';
     index--;
     updateCarousel();
+    updateImageSlider(oldIndex);
   }
 };
+
+// Next slide images
+const imageWrapperWidth = document.getElementById('image-wrapper').offsetWidth + 'px';
+const imageSlider = document.getElementById('image-slider')
+const imageSlides = Array.from(imageSlider.children);
+const totalImageSlider = imageSlides.length;
+
+imageSlides.forEach((slide) => {
+  slide.classList.add(`w-[${imageWrapperWidth}]`);
+});
+
+const updateImageSlider = (oldIndex) => {
+  imageSlider.style.transition = 'transform 0.5s ease-in-out';
+  imageSlides[oldIndex].style.display = 'none';
+  imageSlides[index].style.display = 'grid';
+}
 
 // Event Listeners for navigation
 carousel.style.transition = 'transform 0.5s ease-in-out';

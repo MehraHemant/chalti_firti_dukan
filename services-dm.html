@@ -1,271 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js" type="text/javascript"></script>
+    <script src="./styles.js" type="text/javascript"></script>
+    <title>BTL Services</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./tailwind.js" type="text/javascript"></script>
-  <script src="./styles.js" type="text/javascript"></script>
-  <title>BTL Services</title>
-</head>
+  <body>
+    <!-- 1. Navigation bar -->
+    <header class="sticky top-0 z-50 bg-white/80 drop-shadow-xl backdrop-blur-3xl">
+      <div class="relative flex h-20 min-h-16 w-full justify-center bg-white">
+        <div class="bg-primary h-12 w-full"></div>
+        <img src="/images/CFD-Logo.png" class="absolute top-1.5 h-16" alt="logo" />
+      </div>
+      <div id="header" class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2 max-sm:text-xs">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="max-lg:hidden">Humari Pehchan</a>
+        <div class="group relative h-full">
+          <span class="selected cursor-pointer py-0.5" onclick="handleNavItemClick(event)" id="services">Services</span>
+          <div id="dropdown" class="absolute top-7 z-10 flex hidden flex-col bg-white/90 text-black shadow-lg *:border-b max-sm:top-6">
+            <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3">BTL Services</a>
+            <button class="text-nowrap bg-gray-300 px-4 py-3 text-left" disabled>Digital Marketing Services</button>
+            <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3">ATL Services</a>
+          </div>
+        </div>
+        <a href="about.html">Case Study</a>
+        <a href="#" class="">Blog</a>
+        <a href="#" class="max-lg:hidden">Let's Connect</a>
+      </div>
+    </header>
 
-<body>
-  <!-- 1. Navigation bar -->
-  <header class="">
-    <div class="min-h-16 flex justify-center bg-primary w-full">
-      <div class="font-bold text-lg">CHALTI FIRTI DUKAN</div>
-    </div>
-    <div id="header" class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2 max-sm:text-xs">
-      <a href="#" class="selected">Home</a>
-      <a href="about.html" class="max-lg:hidden">Humari Pehchan</a>
-      <div class="group relative h-full">
-        <span class="cursor-pointer py-2" onclick="handleNavItemClick(event)" id="services">Services</span>
-        <div id="dropdown" class="absolute top-7 z-10 flex hidden flex-col bg-white/90 text-black shadow-lg *:border-b max-sm:top-6">
-          <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3">BTL Services</a>
-          <a href="/services-dm.html" class="hover:bg-secondary text-nowrap px-4 py-3">Digital Marketing Services</a>
-          <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3">ATL Services</a>
+    <section class="bg-primary py-10 text-white max-md:py-4 max-sm:py-2">
+      <div class="flex flex-col items-center gap-2 py-6 max-md:gap-0.5 max-md:py-3 max-sm:gap-0">
+        <h2 class="font-sans text-6xl font-extrabold uppercase text-white max-lg:text-4xl max-lg:font-bold max-md:text-3xl max-sm:text-2xl"> btl services </h2>
+        <div class="max h-1 w-48 bg-white max-lg:h-0.5 max-lg:w-36"></div>
+      </div>
+      <div class="mx-auto max-w-xl px-3 text-center text-3xl max-lg:text-xl">
+        We deliver
+        <span class="font-rubik text-4xl font-thin uppercase max-lg:text-2xl max-md:text-xl">advertisement </span> in a truly
+        <span class="font-rubik text-4xl font-thin uppercase max-lg:text-2xl max-md:text-xl">exciting, innovative and creative way</span>
+      </div>
+    </section>
+    <section class="bg-primary flex flex-col text-white">
+      <!-- services start from here -->
+      <div class="mx-auto flex max-w-7xl items-center py-6 max-md:flex-col">
+        <div class="max-w-xl p-8 max-lg:p-6 max-lg:max-w-sm">
+          <img src="./images/btl/canter_branding.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
+        </div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px]"> television &nbsp; ad </h2>
+            <div class="max h-0.5 w-52 bg-white max-lg:h-px max-lg:w-40"></div>
+          </div>
+          <p class="mt-5 px-8 text-center text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            Videos Ads are the most popular media option for TV Advertising. Innovative television Advertising options include L Band, Scroller and Aston Bands. Content integration
+            is another popular Television Advertising option.
+          </p>
         </div>
       </div>
-      <a href="about.html" class="">Case Study</a>
-      <a href="#" class="">Blog</a>
-      <a href="#" class="max-lg:hidden">Let's Connect</a>
-    </div>
-  </header>
-
-  <section class="bg-primary text-white py-10">
-    <div class="flex flex-col items-center gap-3 max-md:gap-1 max-lg:gap-2 py-6">
-      <h2 class="text-6xl text-white font-extrabold max-lg:text-4xl max-md:text-3xl max-lg:font-bold uppercase">
-        btl services
-      </h2>
-      <div class="w-48 max-lg:w-36 h-1 max-lg:h-0.5 max bg-white"></div>
-    </div>
-    <div class="max-w-xl mx-auto text-3xl font-extralight max-lg:text-xl text-center px-3">
-      We deliver
-      <span class="uppercase font-rubik text-4xl max-lg:text-2xl max-md:text-xl">advertisement </span> in a truly
-      <span class="font-rubik text-4xl max-lg:text-2xl uppercase max-md:text-xl">exciting, innovative and creative
-        way</span>
-    </div>
-  </section>
-  <section class="bg-primary flex flex-col text-white">
-    <!-- services start from here -->
-    <div class="flex max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/canter_branding.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            canter &nbsp; branding
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
+      <!--  -->
+      <div class="mx-auto flex max-w-7xl flex-row-reverse items-center py-6 max-md:flex-col">
+        <div class="max-w-xl p-8 max-lg:p-6 max-lg:max-w-sm">
+          <img src="./images/services/img-20240613-161612-1000x1000.jpg.webp" class="shadow-3 aspect-video object-cover" alt="img" />
         </div>
-        <h3 class="capitalize italic font-medium text-lg/tight text-center">
-          let your brand reach customers on the wheels
-        </h3>
-        <p class="text-center max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Maximize your brand’s visibility with Canter Branding, the leading
-          provider of Mobile Van Advertising in India. Our innovative approach
-          places illuminated billboards on trucks that move throughout cities,
-          ensuring your brand reaches every corner, from bustling urban
-          streets to the heart of rural areas. The road show attracts large
-          amount of crowd and can get customer to notice your brands easily.
-        </p>
-      </div>
-    </div>
-    <!--  -->
-    <div class="flex flex-row-reverse max-lg:flex-col items-center mx-auto max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/retail_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            Retail &nbsp; Activation
-          </h2>
-          <div class="w-64 max-lg:w-56 max-lg:h-px h-0.5 max bg-white"></div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px]"> newspaper &nbsp; ad </h2>
+            <div class="max h-0.5 w-64 bg-white max-lg:h-px max-lg:w-56"></div>
+          </div>
+          <div class="mt-5 px-8 text-center text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            Newspapers Advertising have the largest spend among total marketing budget. The popular formats to advertise in Newspapers are:
+            <ul class="list box-border flex list-inside list-disc justify-between max-md:flex-col max-md:items-start">
+              <li>Classified advertisement</li>
+              <li>Display Advertisements</li>
+            </ul>
+          </div>
         </div>
-        <h3 class="capitalize italic font-medium px-19 text-lg/tight text-center">
-          engaging customer through interactive experiences
-        </h3>
-        <p class="text-center max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Retail Activation is a strategic approach used to engage customers at retail locations through interactive
-          experiences. It aims to promote store openings, increase foot traffic, and boost sales by creating memorable,
-          shareable moments. These activations can include in-store events, product demonstrations, and experiential
-          marketing campaigns that encourage shoppers to interact with the brand and its products, ultimately driving
-          customer engagement and purchase behavior.
-        </p>
       </div>
-    </div>
 
-    <!--  -->
-    <div class="flex max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/mall_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            mall &nbsp; activation
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
+      <!--  -->
+      <div class="mx-auto flex max-w-7xl items-center py-6 max-md:flex-col">
+        <div class="max-w-xl w-full max-lg:max-w-lg p-8 max-lg:p-6">
+          <img src="./images/services/cinema-advertising.jpeg" class="shadow-3 aspect-video object-cover" alt="img" />
         </div>
-        <p class="text-center max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Mall activation refers to the strategic process of enhancing brand visibility and engagement by directly
-          interacting with potential customers in a mall setting. This can be done through different types of events or
-          marketing campaigns. It’s an ideal way to generate brand awareness and to introduce new products/services to
-          consumers.
-        </p>
-      </div>
-    </div>
-
-    <!--  -->
-    <div class="flex flex-row-reverse max-lg:flex-col items-center mx-auto max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/corporate_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-center text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            corporate &nbsp; Activation
-          </h2>
-          <div class="w-64 max-lg:w-56 max-lg:h-px h-0.5 max bg-white"></div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px]"> cinema &nbsp; ad </h2>
+            <div class="max h-0.5 w-52 bg-white max-lg:h-px max-lg:w-40"></div>
+          </div>
+          <p class="mt-5 px-8 text-center text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            Cinema Advertising is one of the most interesting new age Advertising options and effective medium to connect with a large number of audience who come to different
+            theatres and multiplexes across India. It is the recent last few years when Cinema Advertising in India has become popular among the Advertisers due to increased
+            availability of multiplexes in large numbers
+          </p>
         </div>
-        <p class="text-center max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          At Vistaar Media, we tailor corporate activations to your specific target audience by filtering based on
-          location, age, industry, and income. Our approach ensures your brand engages with the right companies. From
-          strategic setups like stalls, roll-up standees in high-traffic areas such as canteens, lobbies, and entry
-          points, we maximize exposure. Along with this, marketing materials like leaflets, flyers, USB drives, and
-          brochures effectively deliver your brand message, making sure your products and services resonate with
-          potential customers. By combining strategic location with thoughtful promotional materials, we deliver a
-          comprehensive corporate activation experience that drives results.
-        </p>
       </div>
-    </div>
 
-    <!--  -->
-    <div class="flex max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/mall_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            society &nbsp; activation
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
+      <!--  -->
+      <div class="mx-auto flex max-w-7xl flex-row-reverse items-center py-6 max-md:flex-col">
+        <div class="max-w-xl p-8 max-lg:p-6 max-lg:max-w-sm">
+          <img src="./images/services/radio-advertising-service-500x500.jpg.webp" class="shadow-3 aspect-video object-cover" alt="img" />
         </div>
-        <h3 class="capitalize italic font-medium px-19 text-lg/tight">
-          connecting with your target audience
-        </h3>
-        <p class="max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Society activation is an effective way to engage your target consumer in their own environment. It fosters a
-          fun, friendly atmosphere that encourages community bonding. With our extensive database of housing societies
-          across India, categorized by residents' profiles, income groups, and age demographics, we offer hyper-targeted
-          marketing solutions. This approach ensures that your brand promotion and product launches resonate with the
-          right audience, making society activations an ideal choice for building brand connections and increasing
-          engagement in local communities.
-        </p>
-      </div>
-    </div>
-
-    <!--  -->
-    <div class="flex flex-row-reverse max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/mall_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            school &nbsp; activation
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-center text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px]"> radio &nbsp; advertising </h2>
+            <div class="max h-0.5 w-64 bg-white max-lg:h-px max-lg:w-56"></div>
+          </div>
+          <p class="mt-5 px-8 text-center text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            At Vistaar Media, we offer the best FM Advertising (Radio Ads) services. Our enthusiastic and innovative team is dedicated to crafting "Magical" radio ads that resonate
+            with audiences. By weaving memorable stories, we help create an unforgettable brand image that stays in the minds of listeners. Let us transform your advertising vision
+            into reality.
+          </p>
         </div>
-        <p class="max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          School Promotion Activation is a powerful strategy that combines marketing, community engagement, and outreach
-          to boost your school's visibility. By highlighting your institution's unique strengths and values, you can
-          attract prospective students and foster stronger ties with parents and the local community. Utilizing
-          promotional materials such as leaflets, flyers, pen drives, and mini brochures can effectively deliver the
-          right message, ensuring that your brand identity resonates with the audience.
-        </p>
       </div>
-    </div>
 
-    <!--  -->
-    <div class="flex max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/mall_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            college &nbsp; activation
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
+      <!--  -->
+      <div class="mx-auto flex max-w-7xl items-center py-6 max-md:flex-col">
+        <div class="max-w-xl p-8 max-lg:p-6 max-lg:max-w-sm">
+          <img src="./images/services/bus-branding-service-500x500.jpg.webp" class="shadow-3 aspect-video object-cover" alt="img" />
         </div>
-        <h3 class="capitalize italic font-medium px-19 text-lg/tight">
-          connecting with your target audience
-        </h3>
-        <p class="max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Unlock the immense potential of college audiences with Vistaar Media ! We specialize in promoting brands
-          within college environments, transforming students into enthusiastic brand advocates. Our strategic approach
-          ensures your message resonates on campuses nationwide, creating lasting impressions and driving engagement.
-          With tailored campaigns designed to connect with students, we help you establish a powerful presence in the
-          heart of academic life.
-        </p>
-      </div>
-    </div>
-
-
-    <!--  -->
-    <div class="flex flex-row-reverse max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/mall_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            pole &nbsp; branding
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px] max-sm:px-2"> bus &nbsp; wrapping </h2>
+            <div class="max h-0.5 w-52 bg-white max-lg:h-px max-lg:w-40"></div>
+          </div>
+          <p class="mt-5 px-8 text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            Buses are everywhere, and they travel through prime urban locations, exposing your brand to a diverse and extensive audience. With bus wrapping. your message travels
+            alongside potential customers, maximizing exposure.</p
+          >
         </div>
-        <p class="max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Auto rickshaw advertising stands out as one of the most impactful and costeffective media for promoting
-          products and services. With their vibrant displays and constant movement throughout the city, auto rickshaws
-          serve as mobile billboards that effectively capture the attention of diverse audiences. This form of
-          advertising ensures your message reaches the masses, penetrating every nook and corner of urban areas
-        </p>
       </div>
-    </div>
-    
-    <!--  -->
-    <div class="flex max-lg:flex-col mx-auto items-center max-w-7xl py-6">
-      <div class="p-8 max-lg:p-6 max-w-xl">
-        <img src="./images/btl/mall_activation.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
-      </div>
-      <div class="col-span-2 w-full text-center">
-        <div class="flex flex-col items-center gap-2 max-md:gap-1 mb-2 max-lg:gap-2">
-          <h2 class="font-rubik uppercase text-4xl max-lg:text-3xl max-md:text-[28px] leading-none drop-1">
-            auto &nbsp; branding
-          </h2>
-          <div class="w-52 max-lg:w-40 max-lg:h-px h-0.5 max bg-white"></div>
-        </div>
-        <h3 class="capitalize italic font-medium px-19 text-lg/tight">
-          The ultimate advertising solution
-        </h3>
-        <p class="max-lg:px-3 px-8 max-lg:text-base/snug mt-5 text-xl">
-          Pole Kiosk Advertising is one of the most efficient and impactful methods for branding and advertising in
-          major city roads. This innovative approach involves placing compact and eye-catching billboards on electric
-          poles, strategically positioned back-to-back along major city roads. These small yet striking pole kiosk
-          billboards capture the attention of large number of people, ensuring that your message is seen. Their unique
-          placement and vibrant designs make them hard to ignore, effectively drawing the eyes of passersby and creating
-          a lasting impression.
-        </p>
-      </div>
-    </div>
-  </section>
-  <script src="./script.js" type="text/javascript"></script>
-</body>
 
+      <!--  -->
+      <div class="mx-auto flex max-w-7xl flex-row-reverse items-center py-6 max-md:flex-col">
+        <div class="max-w-xl p-8 max-lg:p-6 max-lg:max-w-sm">
+          <img src="./images/services/unipole-advertising-copy.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
+        </div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px] max-sm:px-2"> unipole &nbsp; branding </h2>
+            <div class="max h-0.5 w-52 bg-white max-lg:h-px max-lg:w-40"></div>
+          </div>
+          <p class="mt-5 px-8 text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            Elevate your brand's presence, reach new heights, and make a lasting impression with Unipole branding. With strategic placement in high traffic areas, Unipoles are the
+            perfect canvas to showcase your brand, promotions, and messages effectively.
+          </p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="mx-auto flex max-w-7xl items-center py-6 max-md:flex-col">
+        <div class="max-w-xl p-8 max-lg:p-6 max-lg:max-w-sm">
+          <img src="./images/services/indian-railway-branding-500x500.jpg" class="shadow-3 aspect-video object-cover" alt="img" />
+        </div>
+        <div class="col-span-2 w-full text-center">
+          <div class="mb-2 flex flex-col items-center gap-2 max-lg:gap-2 max-md:gap-1">
+            <h2 class="font-rubik drop-1 text-4xl uppercase leading-none max-lg:text-3xl max-md:text-[28px] max-sm:px-2"> train &nbsp; and &nbsp; railway &nbsp; station </h2>
+            <div class="max h-0.5 w-52 bg-white max-lg:h-px max-lg:w-40"></div>
+          </div>
+          <h3 class="px-19 text-lg/tight font-medium capitalize italic max-sm:px-2">(Branding & Activation)</h3>
+          <p class="mt-5 px-8 text-xl max-lg:px-3 max-lg:text-base/snug max-sm:px-2">
+            With an increase in footfalls at train stations, it makes perfect sense for brands and business to target their customers through digital screens at display at railway
+            stations as it creates a fine visual appeal for brands to be noticed
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
 </html>

@@ -28,7 +28,7 @@ document.head.appendChild(
         @apply bg-secondary border-primary placeholder:text-primary/60 w-full rounded-lg px-3 py-2 outline-none max-sm:bg-secondary/20 max-sm:rounded-none max-sm:border-b max-sm:border-secondary max-sm:placeholder:text-secondary
         }
         .case-study-card {
-        @apply w-64 min-w-64 max-md:text-base text-nowrap bg-white py-1 text-center text-lg font-medium uppercase;
+        @apply w-56 min-w-56 max-md:text-sm text-nowrap bg-white py-1 text-center text-base font-medium uppercase;
         }
       }
       `,
