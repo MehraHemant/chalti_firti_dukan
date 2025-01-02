@@ -7,13 +7,13 @@ document.head.appendChild(
           @apply border-b border-black underline-offset-2;
         }
         .team-member-card {
-        @apply flex flex-col items-center px-4 py-5 bg-black/25 min-h-96;
+        @apply flex flex-col flex-none max-w-sm rounded-md items-center w-full px-4 py-5 bg-black/25;
         }
        .heading {
          @apply pt-3 text-5xl font-extrabold uppercase max-lg:text-4xl max-lg:font-bold max-md:text-3xl max-md:font-extrabold max-sm:text-2xl/5;
         }
         .avatar {
-         @apply w-20 h-20 rounded-full bg-white;
+         @apply w-40 h-40 rounded-full bg-white;
         }
         .card-heading {
          @apply text-4xl font-semibold max-md:text-2xl/10 max-sm:text-xl/6 uppercase;

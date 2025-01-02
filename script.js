@@ -85,3 +85,4 @@ document.getElementById('next').addEventListener('click', nextSlide);
 document.getElementById('prev').addEventListener('click', prevSlide);
 
 // Initialize carousel
+
