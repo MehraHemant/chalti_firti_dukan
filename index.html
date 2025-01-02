@@ -1,397 +1,453 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwind.js" type="text/javascript"></script>
-    <script src="./styles.js" type="text/javascript"></script>
-    <title>Chalti Firti Dukan</title>
-  </head>
 
-  <body>
-    <!-- 1. Navigation bar -->
-    <header class="sticky top-0 z-50 bg-white/80 drop-shadow-xl backdrop-blur-3xl">
-      <div class="relative flex h-20 min-h-16 w-full justify-center bg-white">
-        <div class="bg-primary h-12 w-full"></div>
-        <img src="/images/CFD-Logo.png" class="absolute top-1.5 h-16" alt="logo" />
-      </div>
-      <div id="header" class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2 max-sm:text-xs">
-        <a href="#" class="selected">Home</a>
-        <a href="#humari-pehchan" class="max-lg:hidden">Humari Pehchan</a>
-        <div class="group relative h-full">
-          <span class="cursor-pointer py-2" onclick="handleNavItemClick(event)" id="services">Services</span>
-          <div id="dropdown" class="absolute top-7 z-10 flex hidden flex-col bg-white/90 text-black shadow-lg *:border-b max-sm:top-6">
-            <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3">BTL Services</a>
-            <a href="/services-dm.html" class="hover:bg-secondary text-nowrap px-4 py-3">Digital Marketing Services</a>
-            <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3">ATL Services</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.js" type="text/javascript"></script>
+  <script src="./styles.js" type="text/javascript"></script>
+  <title>Chalti Firti Dukan</title>
+</head>
+
+<body>
+  <!-- 1. Navigation bar -->
+  <header class="sticky top-0 z-50 bg-white/80 drop-shadow-xl backdrop-blur-3xl">
+    <div class="relative flex h-20 min-h-16 w-full justify-center bg-white">
+      <div class="bg-primary h-12 w-full"></div>
+      <img src="/images/CFD-Logo.png" class="absolute top-1.5 h-16" alt="logo" />
+    </div>
+    <div id="header"
+      class="pt- mx-auto flex max-w-3xl justify-between px-2 py-2 text-sm font-semibold tracking-tight *:px-2 max-sm:text-xs">
+      <a href="#" class="selected">Home</a>
+      <a href="#humari-pehchan" class="max-lg:hidden">Humari Pehchan</a>
+      <div class="group relative h-full">
+        <span class="cursor-pointer py-2" onclick="handleNavItemClick(event)" id="services">Services</span>
+        <div id="dropdown"
+          class="absolute top-7 z-10 flex hidden flex-col bg-white/90 text-black shadow-lg *:border-b max-sm:top-6">
+          <a href="/services-btl.html" class="hover:bg-secondary text-nowrap px-4 py-3">BTL Services</a>
+          <a href="/services-dm.html" class="hover:bg-secondary text-nowrap px-4 py-3">Digital Marketing Services</a>
+          <a href="/services-atl.html" class="hover:bg-secondary text-nowrap px-4 py-3">ATL Services</a>
         </div>
-        <a href="about.html#case-study" class="">Case Study</a>
-        <a href="#" class="hidden">Blog</a>
-        <a href="#contact-us" class="">Let's Connect</a>
       </div>
-    </header>
+      <a href="about.html#case-study" class="">Case Study</a>
+      <a href="#" class="hidden">Blog</a>
+      <a href="#contact-us" class="">Let's Connect</a>
+    </div>
+  </header>
 
-    <div class="text-slate-300">
-      <!-- 2. Hero section -->
-      <img class="w-full" src="./images/gadi.png" alt="gadi" />
+  <div class="text-slate-300">
+    <!-- 2. Hero section -->
+    <img class="w-full" src="./images/gadi.png" alt="gadi" />
 
-      <!-- 3. Introduction -->
-      <section class="bg-primary py-4">
-        <div class="flex flex-col items-center gap-3 pb-4 max-lg:gap-1 max-md:gap-1 max-md:pb-2">
-          <h2 id="humari-pehchan" class="text-secondary heading"> Humari Pehchan</h2>
-          <div class="bg-secondary h-1 w-96 max-lg:h-0.5 max-lg:w-40"></div>
-        </div>
-        <div class="mx-auto flex max-w-screen-lg flex-col items-center px-1">
-          <h4 class="flex flex-col text-center text-xl/tight max-md:text-base/5 max-sm:text-sm/4">
-            We are a Complete Brand Experience Agency, transforming casual spectators into loyal followers of the brand. We aim to engage hearts and minds of the focussed
-            target-audience with your brand. We create engaging and more meaningful ideas to interact with the target audience and connect them with the brand in a more realistic
-            way
-            <span class="font-semibold italic max-md:text-lg max-sm:text-base">"We plan for Planes to Take off"</span>
-          </h4>
-          <h3 class="mt-6 text-center text-4xl font-bold max-md:mt-3 max-md:text-xl max-sm:mt-2 max-sm:text-lg"> Introducing Store on Wheels</h3>
-          <h4 class="my-2 text-center text-3xl font-extralight max-md:my-1 max-md:text-xl/6 max-sm:text-lg"> Revolutionizing Retail with Mobile Convenience. </h4>
-          <h4 class="mb-2 text-center text-3xl font-semibold italic max-md:text-xl/7 max-sm:text-lg/5">Welcome to the future of Retail! </h4>
-          <h5 class="text-center text-xl/tight max-md:text-base/5 max-sm:text-sm/4"
-            ><strong>CFD</strong> is here to redefine the way brands engage with their customers. Our innovative concept combines the mobility of vehicles with the functionality of
-            a traditional store, creating a seamless shopping experience that meets consumers where they are.</h5
-          >
-        </div>
-      </section>
-      <div class="bg-secondary h-28 max-lg:h-10">
-        <div class="across bg-primary h-full"></div>
+    <!-- 3. Introduction -->
+    <section class="bg-primary py-4">
+      <div class="flex flex-col items-center gap-3 pb-4 max-lg:gap-1 max-md:gap-1 max-md:pb-2">
+        <h2 id="humari-pehchan" class="text-secondary heading"> Humari Pehchan</h2>
+        <div class="bg-secondary h-1 w-96 max-lg:h-0.5 max-lg:w-40"></div>
       </div>
-      <section class="bg-secondary flex w-full justify-center px-4 py-14">
-        <img src="images/glow_on_wheels.png" class="w-full max-w-6xl" alt="gadi details" />
-      </section>
-      <div class="bg-secondary h-28 max-lg:h-10">
-        <div class="rev-across bg-primary h-full"></div>
+      <div class="mx-auto flex max-w-screen-lg flex-col items-center px-1">
+        <h4 class="flex flex-col text-center text-xl/tight max-md:text-base/5 max-sm:text-sm/4">
+          We are a Complete Brand Experience Agency, transforming casual spectators into loyal followers of the brand.
+          We aim to engage hearts and minds of the focussed
+          target-audience with your brand. We create engaging and more meaningful ideas to interact with the target
+          audience and connect them with the brand in a more realistic
+          way
+          <span class="font-semibold italic max-md:text-lg max-sm:text-base">"We plan for Planes to Take off"</span>
+        </h4>
+        <h3 class="mt-6 text-center text-4xl font-bold max-md:mt-3 max-md:text-xl max-sm:mt-2 max-sm:text-lg">
+          Introducing Store on Wheels</h3>
+        <h4 class="my-2 text-center text-3xl font-extralight max-md:my-1 max-md:text-xl/6 max-sm:text-lg">
+          Revolutionizing Retail with Mobile Convenience. </h4>
+        <h4 class="mb-2 text-center text-3xl font-semibold italic max-md:text-xl/7 max-sm:text-lg/5">Welcome to the
+          future of Retail! </h4>
+        <h5 class="text-center text-xl/tight max-md:text-base/5 max-sm:text-sm/4"><strong>CFD</strong> is here to
+          redefine the way brands engage with their customers. Our innovative concept combines the mobility of vehicles
+          with the functionality of
+          a traditional store, creating a seamless shopping experience that meets consumers where they are.</h5>
       </div>
-      <!-- TEAM section -->
-      <section class="bg-primary px-40 py-10 max-lg:px-10 max-md:px-2">
-        <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
-          <h2 class="text-secondary heading">Teams</h2>
-          <div class="bg-secondary mb-6 h-1 w-24 max-lg:h-0.5 max-md:w-14"></div>
-          <div class="flex w-full gap-x-4 overflow-auto px-4 py-2 max-sm:gap-x-2">
-            <div class="team-member-card">
-              <img src="/images/teams/ujjwal.jpg" class="avatar" alt="ujjwal" />
-              <div class="py-3 text-center">
-                <h3 class="text-xl font-bold uppercase">ujjwal singh - CEO</h3>
-                <h4 class="text-base font-semibold">Engineer. MBA. Visionary Leader.</h4>
-                <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
-                <p class="text-thin mt-4 text-base max-sm:text-sm"
-                  >By day, Ujjawal is passionate marketing professional, steering our company with strategic acumen and a relentless drive for success. With a sharp engineering
-                  mind and a robust business background, He brings a unique blend of technical expertise and managerial prowess to the table.
-                </p>
-              </div>
-            </div>
-
-            <div class="team-member-card">
-              <img src="/images/teams/Abhishek Sir.jpeg" class="avatar" alt="avatar" />
-              <div class="py-3 text-center">
-                <h3 class="text-xl font-bold uppercase">Abhishek - COO</h3>
-                <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
-                <p class="text-thin mt-4 text-base max-sm:text-sm"
-                  >A passionate idea maker, Abhishek brings a jolt of energy and professionalism to every job he tackles. With 16 years of valuable experience working on government
-                  campaign programs in rural areas, he has a track record of making impactful changes. He believes in empowering teams, nurturing talent, and fostering a culture of
-                  continuous improvement</p
-                >
-              </div>
-            </div>
-
-            <div class="team-member-card">
-              <img src="/images/teams/ishu.jpg" class="avatar" alt="avatar" />
-              <div class="py-3 text-center">
-                <h3 class="text-xl font-bold uppercase">Ishwar</h3>
-                <h4 class="text-base font-semibold">Business Planning & Development</h4>
-                <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
-                <p class="text-thin mt-4 text-base max-sm:text-sm">
-                  Ishwar thrives on road trips and enjoys exploring rural wilderness. When not in the office she can be found watching sunsets at the beach. Her passion for
-                  experiential marketing fuels her professional endeavors, where she earns her bread, butter, and jam.
-                </p>
-              </div>
-            </div>
-
-            <div class="team-member-card">
-              <img src="/images/teams/Avinash.jpg" class="avatar" alt="avinash" />
-              <div class="py-3 text-center">
-                <h3 class="text-xl font-bold uppercase">Avinash</h3>
-                <h4 class="text-base font-semibold">Social Media Manager</h4>
-                <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
-                <p class="text-thin mt-4 text-base max-sm:text-sm"
-                  >Meet Avinash our young Enthusiastic Guy who never says no to work, our social media manager whose dedication knows no bounds, his mind is constantly buzzing with
-                  innovative strategies to elevate campaign online presence . His handles several campaigns from mission Pataliputra to Vikisit Bharat consistently delivering
-                  outstanding results.
-                </p>
-              </div>
-            </div>
-
-            <div class="team-member-card">
-              <img src="/images/teams/IMG_9412.jpg" class="avatar" alt="avatar" />
-              <div class="py-3 text-center">
-                <h3 class="text-xl font-bold uppercase">Ashwani</h3>
-                <h4 class="text-base font-semibold">Operation Manager</h4>
-                <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
-                <p class="text-thin mt-4 text-base max-sm:text-sm"
-                  >Meet Ashwani the dynamic Operations Head who infuses every project with his boundless passion and innate kindness. A young visionary, Ashwani can often be found
-                  exploring the diverse landscapes of our nation's cities, delving deep into their hearts through core political campaigns.
-                </p>
-              </div>
-            </div>
-
-            <div class="team-member-card">
-              <img src="/images/teams/IMG_9412.jpg" class="avatar" alt="avatar" />
-              <div class="py-3 text-center">
-                <h3 class="text-xl font-bold uppercase">Anshu</h3>
-                <h4 class="text-base font-semibold">Head Accounts</h4>
-                <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
-                <p class="text-thin mt-4 text-base max-sm:text-sm"
-                  >Meet Anshu, our Head of Accounts. With her dedication and vast experience, Anshu ensures we navigate through the myriad of numbers with ease. Her expertise and commitment are the pillars that support our financial success.
-
-                </p>
-              </div>
+    </section>
+    <div class="bg-secondary h-28 max-lg:h-10">
+      <div class="across bg-primary h-full"></div>
+    </div>
+    <section class="bg-secondary flex w-full justify-center px-4 py-14">
+      <img src="images/glow_on_wheels.png" class="w-full max-w-6xl" alt="gadi details" />
+    </section>
+    <div class="bg-secondary h-28 max-lg:h-10">
+      <div class="rev-across bg-primary h-full"></div>
+    </div>
+    <!-- TEAM section -->
+    <section class="bg-primary px-40 py-10 max-lg:px-10 max-md:px-2">
+      <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
+        <h2 class="text-secondary heading">Teams</h2>
+        <div class="bg-secondary mb-6 h-1 w-24 max-lg:h-0.5 max-md:w-14"></div>
+        <div class="flex w-full gap-x-4 overflow-auto px-4 py-4 max-sm:gap-x-2">
+          <div class="team-member-card">
+            <img src="/images/teams/ujjwal.jpg" class="avatar" alt="ujjwal" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">ujjwal singh - CEO</h3>
+              <h4 class="text-base font-semibold">Engineer. MBA. Visionary Leader.</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">By day, Ujjawal is passionate marketing professional,
+                steering our company with strategic acumen and a relentless drive for success. With a sharp engineering
+                mind and a robust business background, He brings a unique blend of technical expertise and managerial
+                prowess to the table.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <div class="bg-secondary h-28 max-lg:h-10">
-        <div class="across bg-primary h-full"></div>
+          <div class="team-member-card">
+            <img src="/images/teams/Abhishek Sir.jpeg" class="avatar" alt="avatar" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Abhishek - COO</h3>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">A passionate idea maker, Abhishek brings a jolt of
+                energy and professionalism to every job he tackles. With 16 years of valuable experience working on
+                government
+                campaign programs in rural areas, he has a track record of making impactful changes. He believes in
+                empowering teams, nurturing talent, and fostering a culture of
+                continuous improvement</p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/ishu.jpg" class="avatar" alt="avatar" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Ishwar</h3>
+              <h4 class="text-base font-semibold">Business Planning & Development</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">
+                Ishwar thrives on road trips and enjoys exploring rural wilderness. When not in the office she can be
+                found watching sunsets at the beach. Her passion for
+                experiential marketing fuels her professional endeavors, where she earns her bread, butter, and jam.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/Avinash.jpg" class="avatar" alt="avinash" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Avinash</h3>
+              <h4 class="text-base font-semibold">Social Media Manager</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">Meet Avinash our young Enthusiastic Guy who never says
+                no to work, our social media manager whose dedication knows no bounds, his mind is constantly buzzing
+                with
+                innovative strategies to elevate campaign online presence . His handles several campaigns from mission
+                Pataliputra to Vikisit Bharat consistently delivering
+                outstanding results.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/IMG_9412.jpg" class="avatar" alt="avatar" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Ashwani</h3>
+              <h4 class="text-base font-semibold">Operation Manager</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">Meet Ashwani the dynamic Operations Head who infuses
+                every project with his boundless passion and innate kindness. A young visionary, Ashwani can often be
+                found
+                exploring the diverse landscapes of our nation's cities, delving deep into their hearts through core
+                political campaigns.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/Anshu.jpg" class="avatar" alt="avatar" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Anshu</h3>
+              <h4 class="text-base font-semibold">Head Accounts</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">Meet Anshu, our Head of Accounts. With her dedication
+                and vast experience, Anshu ensures we navigate through the myriad of numbers with ease. Her expertise
+                and commitment are the pillars that support our financial success.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/Heena.jpg" class="avatar" alt="avatar" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Heena Singh</h3>
+              <h4 class="text-base font-semibold">HR Professional</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">Meet Heena our beloved HR professional at ourCompany.
+                With over 5 years of rich experience across various sectors, she brings unparalleled expertise to our
+                team. Whether it's work-related or personal, Heena is always there to support us with a cheerful
+                attitude.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/deepak.jpg" class="avatar" alt="avatar" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Deepak Singh</h3>
+              <h4 class="text-base font-semibold">Senior Graphic Designer</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">Deepak is a dynamic visualizer and graphics designer
+                with a keen eye for contemporary trends. His passion for design extends from government projects to
+                corporate ventures, showcasing a versatile skill set honed through years of experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="/images/teams/Priya.jpeg" class="avatar" alt="priya" />
+            <div class="py-3 text-center">
+              <h3 class="text-xl font-bold uppercase">Priya</h3>
+              <h4 class="text-base font-semibold">Graphic Designer</h4>
+              <div class="mx-auto my-2 h-0.5 w-36 bg-white"></div>
+              <p class="text-thin mt-4 text-base max-sm:text-sm">Priya, our Canva Queen, has mastered all the techniques
+                of design. With vast experience ranging from print to social media posts, she brings creativity and
+                precision to every project. Priya is always eager to learn new trends and skills, ensuring our designs
+                are always fresh and up-to-date. Her dedication to staying current makes her an invaluable asset to our
+                team.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-secondary h-28 max-lg:h-10">
+      <div class="across bg-primary h-full"></div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-secondary px-40 py-8 pb-10 max-lg:px-10 max-md:px-2">
+      <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
+        <h2 class="heading text-primary">Services</h2>
+        <div class="bg-primary h-1 w-48 max-lg:h-0.5 max-lg:w-28"></div>
       </div>
 
-      <!-- Services Section -->
-      <section id="services" class="bg-secondary px-40 py-8 pb-10 max-lg:px-10 max-md:px-2">
-        <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
-          <h2 class="heading text-primary">Services</h2>
-          <div class="bg-primary h-1 w-48 max-lg:h-0.5 max-lg:w-28"></div>
+      <div class="grid grid-cols-4 gap-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
+        <div
+          class="flex min-w-40 flex-col items-center justify-between gap-10 bg-blue-900 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-fit rounded-full bg-blue-950 p-1">
+              <img class="aspect-square w-12 object-contain p-2" src="/images/icons/logo.png" alt="logo" />
+            </div>
+            <h3 class="card-heading">CFD</h3>
+            <p class="card-desc"> Your brand on wheels bringing businesses closer to customers with mobile promotion
+              like never before. </p>
+          </div>
+          <button class="primary-btn group mx-auto"><span class="max-md:text-base max-sm:text-sm">know more</span>
+            <img src="images/logo/right-arrow.svg" alt="right-arrow" />
+          </button>
         </div>
 
-        <div class="grid grid-cols-4 gap-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
-          <div class="flex min-w-40 flex-col items-center justify-between gap-10 bg-blue-900 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-fit rounded-full bg-blue-950 p-1">
-                <img class="aspect-square w-12 object-contain p-2" src="/images/icons/logo.png" alt="logo" />
-              </div>
-              <h3 class="card-heading">CFD</h3>
-              <p class="card-desc"> Your brand on wheels bringing businesses closer to customers with mobile promotion like never before. </p>
+        <div
+          class="flex min-w-40 flex-col items-center justify-between gap-10 bg-cyan-700 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-fit rounded-full bg-cyan-800 p-1">
+              <img class="w-12 object-contain p-2" src="/images/icons/market-research.png" alt="logo" />
             </div>
-            <button class="primary-btn group mx-auto"
-              ><span class="max-md:text-base max-sm:text-sm">know more</span>
-              <img src="images/logo/right-arrow.svg" alt="right-arrow" />
-            </button>
+            <h3 class="card-heading">BTL</h3>
+            <p class="card-desc"> Directly engage your audience with personalized, on-ground marketing solutions that
+              leave a lasting impression. </p>
           </div>
-
-          <div class="flex min-w-40 flex-col items-center justify-between gap-10 bg-cyan-700 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-fit rounded-full bg-cyan-800 p-1">
-                <img class="w-12 object-contain p-2" src="/images/icons/market-research.png" alt="logo" />
-              </div>
-              <h3 class="card-heading">BTL</h3>
-              <p class="card-desc"> Directly engage your audience with personalized, on-ground marketing solutions that leave a lasting impression. </p>
-            </div>
-            <a href="services-btl.html" class="primary-btn group mx-auto"
-              ><span class="max-md:text-base max-sm:text-sm">know more</span>
-              <img src="images/logo/right-arrow.svg" alt="right-arrow" />
-            </a>
-          </div>
-
-          <div class="flex min-w-40 flex-col items-center justify-between gap-10 bg-purple-800 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-fit rounded-full bg-purple-900 p-1">
-                <img class="w-12 object-contain p-2" src="/images/icons/video-editing.png" alt="logo" />
-              </div>
-              <h3 class="card-heading">atl</h3>
-              <p class="card-desc"> Reach your masses with high impact strategic campaigns across a variety of media channels </p>
-            </div>
-            <a href="services-atl.html" class="primary-btn group mx-auto"
-              ><span class="max-md:text-base max-sm:text-sm">know more</span>
-              <img src="images/logo/right-arrow.svg" alt="right-arrow" />
-            </a>
-          </div>
-
-          <div class="flex min-w-40 flex-col items-center justify-between gap-10 bg-amber-700 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-fit rounded-full bg-amber-800 p-1">
-                <img class="w-12 object-contain p-2" src="/images/icons/social-media.png" alt="logo" />
-              </div>
-              <h3 class="card-heading">digital</h3>
-              <p class="card-desc"> Amplify your brand's presence online with cutting-edge digital marketing strategies that connect and convert. </p>
-            </div>
-            <a href="services-atl.html" class="primary-btn group mx-auto"
-              ><span class="max-md:text-base max-sm:text-sm">know more</span>
-              <img src="images/logo/right-arrow.svg" alt="right-arrow" />
-            </a>
-          </div>
+          <a href="services-btl.html" class="primary-btn group mx-auto"><span
+              class="max-md:text-base max-sm:text-sm">know more</span>
+            <img src="images/logo/right-arrow.svg" alt="right-arrow" />
+          </a>
         </div>
-        <div class="mt-5 flex flex-wrap items-center justify-between gap-x-12 max-md:mt-3 max-md:gap-x-4 max-sm:gap-y-2">
-          <img src="/images/logo/Expand.png" class="max-w-xs object-contain max-lg:max-w-64 max-md:max-w-32" alt="expand" />
-          <img src="/images/logo/Explore.png" class="mt-6 max-w-xs object-contain max-md:mt-2 max-md:max-w-32" alt="expand" />
-          <img src="/images/logo/Experience.png" class="max-w-xs object-contain max-md:max-w-32" alt="expand" />
-        </div>
-        <h2 class="mx-auto mt-4 w-fit text-xl max-md:text-base">with <span class="text-primary text-2xl font-bold uppercase leading-tight max-md:text-xl">vistaar media</span></h2>
-      </section>
 
-      <div class="bg-secondary h-28 max-lg:h-10">
-        <div class="rev-across bg-primary h-full"></div>
+        <div
+          class="flex min-w-40 flex-col items-center justify-between gap-10 bg-purple-800 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-fit rounded-full bg-purple-900 p-1">
+              <img class="w-12 object-contain p-2" src="/images/icons/video-editing.png" alt="logo" />
+            </div>
+            <h3 class="card-heading">atl</h3>
+            <p class="card-desc"> Reach your masses with high impact strategic campaigns across a variety of media
+              channels </p>
+          </div>
+          <a href="services-atl.html" class="primary-btn group mx-auto"><span
+              class="max-md:text-base max-sm:text-sm">know more</span>
+            <img src="images/logo/right-arrow.svg" alt="right-arrow" />
+          </a>
+        </div>
+
+        <div
+          class="flex min-w-40 flex-col items-center justify-between gap-10 bg-amber-700 px-6 py-10 max-md:gap-4 max-md:px-4 max-md:py-6 max-sm:gap-2">
+          <div class="flex flex-col items-center gap-4">
+            <div class="w-fit rounded-full bg-amber-800 p-1">
+              <img class="w-12 object-contain p-2" src="/images/icons/social-media.png" alt="logo" />
+            </div>
+            <h3 class="card-heading">digital</h3>
+            <p class="card-desc"> Amplify your brand's presence online with cutting-edge digital marketing strategies
+              that connect and convert. </p>
+          </div>
+          <a href="services-atl.html" class="primary-btn group mx-auto"><span
+              class="max-md:text-base max-sm:text-sm">know more</span>
+            <img src="images/logo/right-arrow.svg" alt="right-arrow" />
+          </a>
+        </div>
       </div>
-      <section id="testimonial" class="bg-primary flex flex-col items-center px-40 py-10 max-lg:px-10 max-md:px-6">
-        <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
-          <h2 class="text-secondary heading"> testimonial</h2>
-          <div class="bg-secondary h-1 w-48 max-lg:h-0.5 max-lg:w-32"></div>
-        </div>
-        <div class="bg-secondary shadow-2 text-primary relative flex w-full max-w-2xl flex-col rounded-bl-[80px] rounded-tr-[80px] py-6 font-medium max-lg:max-w-lg">
-          <p class="px-12 text-xl/7 font-normal max-lg:text-lg/6 max-md:px-6 max-sm:text-sm/4">
-            Chalti Firti Dukaan brought Avon Cycles right to the heart of Odisha with their innovative mobile campaign. Their team executed the campaign flawlessly, helping us
-            connect with new customers and grow brand awareness across the state.
-          </p>
-          <h5 class="mt-3 pr-8 text-right text-lg/4 italic max-sm:text-sm/4">- Avon Cycles Team</h5>
-          <h5 class="pr-8 text-right text-lg italic max-sm:text-sm/4">(Odisha Campaign)</h5>
-          <span class="absolute -right-5 bottom-10 flex aspect-square w-10 items-center justify-center rounded-full border bg-white text-4xl">
-            <!-- Double quotes svg -->
-            <?xml version="1.0" encoding="iso-8859-1"?>
-            <svg
-              height="20px"
-              width="20px"
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 32 32"
-              xml:space="preserve"
-            >
-              <g>
-                <g id="right_x5F_quote">
-                  <g>
-                    <path class="fill-primary" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z" />
-                    <path class="fill-primary" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z" />
-                  </g>
+      <div class="mt-5 flex flex-wrap items-center justify-between gap-x-12 max-md:mt-3 max-md:gap-x-4 max-sm:gap-y-2">
+        <img src="/images/logo/Expand.png" class="max-w-xs object-contain max-lg:max-w-64 max-md:max-w-32"
+          alt="expand" />
+        <img src="/images/logo/Explore.png" class="mt-6 max-w-xs object-contain max-md:mt-2 max-md:max-w-32"
+          alt="expand" />
+        <img src="/images/logo/Experience.png" class="max-w-xs object-contain max-md:max-w-32" alt="expand" />
+      </div>
+      <h2 class="mx-auto mt-4 w-fit text-xl max-md:text-base">with <span
+          class="text-primary text-2xl font-bold uppercase leading-tight max-md:text-xl">vistaar media</span></h2>
+    </section>
+
+    <div class="bg-secondary h-28 max-lg:h-10">
+      <div class="rev-across bg-primary h-full"></div>
+    </div>
+    <section id="testimonial" class="bg-primary flex flex-col items-center px-40 py-10 max-lg:px-10 max-md:px-6">
+      <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
+        <h2 class="text-secondary heading"> testimonial</h2>
+        <div class="bg-secondary h-1 w-48 max-lg:h-0.5 max-lg:w-32"></div>
+      </div>
+      <div
+        class="bg-secondary shadow-2 text-primary relative flex w-full max-w-2xl flex-col rounded-bl-[80px] rounded-tr-[80px] py-6 font-medium max-lg:max-w-lg">
+        <p class="px-12 text-xl/7 font-normal max-lg:text-lg/6 max-md:px-6 max-sm:text-sm/4">
+          Chalti Firti Dukaan brought Avon Cycles right to the heart of Odisha with their innovative mobile campaign.
+          Their team executed the campaign flawlessly, helping us
+          connect with new customers and grow brand awareness across the state.
+        </p>
+        <h5 class="mt-3 pr-8 text-right text-lg/4 italic max-sm:text-sm/4">- Avon Cycles Team</h5>
+        <h5 class="pr-8 text-right text-lg italic max-sm:text-sm/4">(Odisha Campaign)</h5>
+        <span
+          class="absolute -right-5 bottom-10 flex aspect-square w-10 items-center justify-center rounded-full border bg-white text-4xl">
+          <!-- Double quotes svg -->
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+            <g>
+              <g id="right_x5F_quote">
+                <g>
+                  <path class="fill-primary" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z" />
+                  <path class="fill-primary" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z" />
                 </g>
               </g>
-            </svg>
-          </span>
-        </div>
-      </section>
-
-      <div class="h-28 bg-white max-lg:h-10">
-        <div class="across bg-primary h-full"></div>
+            </g>
+          </svg>
+        </span>
       </div>
-      <section id="clients" class="bg-white pb-4">
-        <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
-          <h2 class="text-primary heading">clients</h2>
-          <div class="bg-primary h-1 w-36 max-lg:h-0.5 max-lg:w-24"></div>
-        </div>
-        <div
-          class="*:object-fit *:grow-1 border-primary mx-auto mt-4 flex max-w-screen-lg flex-wrap items-center justify-center gap-12 rounded-2xl border px-6 py-8 *:w-40 max-md:mx-2 max-md:py-4 max-sm:gap-x-4 max-sm:gap-y-2.5 max-sm:px-3 max-sm:*:w-1/4"
-        >
-          <img src="/images/clients/avon_cycles.png" alt="avon-cycles" />
-          <img src="/images/clients/bonn.png" alt="bonn" />
-          <img src="/images/clients/kurlon.png" alt="kurlon" />
-          <img src="/images/clients/rungtas.png" alt="rungtas" />
-          <img src="/images/clients/lqintimo.png" alt="lqintimo" />
-          <img src="/images/clients/myntra.png" alt="myntra" />
-          <img src="/images/clients/bazaar_kolkata.png" alt="bazaar-kolkata" />
-          <img src="/images/clients/ikea.png" alt="ikea" />
-          <img src="/images/clients/livfast.png" alt="livfast" />
-          <img src="/images/clients/girdhar.png" alt="girdhar" />
-          <img src="/images/clients/colorbar.png" alt="colorbar" />
-        </div>
-      </section>
+    </section>
 
-      <section id="contact-us" class="bg-white py-8">
-        <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
-          <h2 class="text-primary heading"> contact us</h2>
-          <div class="bg-primary h-1 w-44 max-lg:h-0.5 max-lg:w-36"></div>
-        </div>
-        <div class="my-6 text-center text-3xl italic text-black max-lg:text-2xl max-md:text-lg max-sm:my-2 max-sm:px-px">
-          <h5 class="text-xl/5 font-bold max-sm:text-base/4">Ready to take your brand on the move?</h5>
-          <h5 class="pt-4 text-lg/5 max-sm:pt-2 max-sm:text-base/4">Let's connect and make it happen!</h5>
-        </div>
-        <form class="bg-primary mx-auto flex max-w-lg flex-col gap-4 px-8 py-12 text-black max-md:px-8 max-sm:px-3 max-sm:text-sm">
-          <div class="flex items-center">
-            <label for="name" class="basis-28 text-slate-200">Name</label>
-            <input type="email" name="name" placeholder="Enter your Full Name" class="input-field" />
-          </div>
-          <div class="flex items-center">
-            <label for="phone" class="basis-28 text-slate-200">Phone No.</label>
-            <input type="tel" name="phone" placeholder="Enter your Mobile Number" class="input-field" />
-          </div>
-          <div class="flex items-center">
-            <label for="email" class="basis-28 text-slate-200">Email ID</label>
-            <input type="email" name="email" placeholder="Enter your email address" class="input-field" />
-          </div>
-          <div class="flex items-start">
-            <label for="message" class="basis-28 text-slate-200">Message</label>
-            <textarea name="message" placeholder="Enter your message here" class="input-field"></textarea>
-          </div>
-          <button type="submit" class="primary-btn ms-24 mt-3 rounded-md text-slate-200">Submit</button>
-        </form>
-      </section>
-
-      <div class="h-28 bg-white max-lg:h-10">
-        <div class="rev-across bg-primary h-full"></div>
-      </div>
-      <section class="bg-primary py-6">
-        <div class="flex flex-wrap justify-center gap-5 italic max-sm:gap-2">
-          <div class="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-              <path d="M3 7l9 6l9 -6" />
-            </svg>
-            <h3 class="max-sm:text-sm">care@vistaar.media</h3>
-          </div>
-          <div class="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-              <path d="M3 7l9 6l9 -6" />
-            </svg>
-            <h3 class="max-sm:text-sm">info@chaltifirtidukan</h3>
-          </div>
-        </div>
-        <div class="flex justify-center gap-6 py-2 max-sm:gap-3">
-          <div class="flex items-center gap-2">
-            <img src="./images/icons/phone-call.png" class="h-4 w-4 object-contain" alt="phone" />
-            <a href="tel:+918076234044">+91 8076234044</a>
-          </div>
-          <span class="font-bold">|</span>
-          <div class="flex items-center gap-2">
-            <img src="./images/icons/old-typical-phone.png" class="h-4 w-4 object-contain" alt="phone" />
-            <a href="tel:+911204151246">+91 120 415 1246</a>
-          </div>
-          <span class="font-bold">|</span>
-          <div class="flex items-center gap-2">
-            <img src="./images/icons/phone-call.png" class="h-4 w-4 object-contain" alt="phone" />
-            <a href="tel:+917303488667">+91 7303488667</a>
-          </div>
-        </div>
-        <address class="mx-auto w-fit"> Unit 901, Tower B, ITHUMB TOWER, Block A, Industrial Area Sector 62, Noida Uttar Pradesh 201309 </address>
-      </section>
+    <div class="h-28 bg-white max-lg:h-10">
+      <div class="across bg-primary h-full"></div>
     </div>
-    <script src="./script.js" type="text/javascript"></script>
-  </body>
+    <section id="clients" class="bg-white pb-4">
+      <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
+        <h2 class="text-primary heading">clients</h2>
+        <div class="bg-primary h-1 w-36 max-lg:h-0.5 max-lg:w-24"></div>
+      </div>
+      <div
+        class="*:object-fit *:grow-1 border-primary mx-auto mt-4 flex max-w-screen-lg flex-wrap items-center justify-center gap-12 rounded-2xl border px-6 py-8 *:w-40 max-md:mx-2 max-md:py-4 max-sm:gap-x-4 max-sm:gap-y-2.5 max-sm:px-3 max-sm:*:w-1/4">
+        <img src="/images/clients/avon_cycles.png" alt="avon-cycles" />
+        <img src="/images/clients/bonn.png" alt="bonn" />
+        <img src="/images/clients/kurlon.png" alt="kurlon" />
+        <img src="/images/clients/rungtas.png" alt="rungtas" />
+        <img src="/images/clients/lqintimo.png" alt="lqintimo" />
+        <img src="/images/clients/myntra.png" alt="myntra" />
+        <img src="/images/clients/bazaar_kolkata.png" alt="bazaar-kolkata" />
+        <img src="/images/clients/ikea.png" alt="ikea" />
+        <img src="/images/clients/livfast.png" alt="livfast" />
+        <img src="/images/clients/girdhar.png" alt="girdhar" />
+        <img src="/images/clients/colorbar.png" alt="colorbar" />
+      </div>
+    </section>
+
+    <section id="contact-us" class="bg-white py-8 relative">
+      <img src="/images/icons/Vector.png" class="absolute -bottom-3 left-10" alt="vector" />
+      <img src="/images/icons/Phone.png" class="absolute -bottom-28 right-40 max-lg:right-24 max-sm:right-8 w-20"
+        alt="vector" />
+      <div class="flex flex-col items-center gap-3 pb-6 max-lg:gap-2 max-md:gap-1">
+        <h2 class="text-primary heading"> contact us</h2>
+        <div class="bg-primary h-1 w-44 max-lg:h-0.5 max-lg:w-36"></div>
+      </div>
+      <div class="my-6 text-center text-3xl italic text-black max-lg:text-2xl max-md:text-lg max-sm:my-2 max-sm:px-px">
+        <h5 class="text-xl/5 font-bold max-sm:text-base/4">Ready to take your brand on the move?</h5>
+        <h5 class="pt-4 text-lg/5 max-sm:pt-2 max-sm:text-base/4">Let's connect and make it happen!</h5>
+      </div>
+      <form
+        class="bg-primary mx-auto flex max-w-lg flex-col gap-4 px-8 py-12 text-black max-md:px-8 max-sm:px-3 max-sm:text-sm">
+        <div class="flex items-center">
+          <label for="name" class="basis-28 text-slate-200">Name</label>
+          <input type="email" name="name" placeholder="Enter your Full Name" class="input-field" />
+        </div>
+        <div class="flex items-center">
+          <label for="phone" class="basis-28 text-slate-200">Phone No.</label>
+          <input type="tel" name="phone" placeholder="Enter your Mobile Number" class="input-field" />
+        </div>
+        <div class="flex items-center">
+          <label for="email" class="basis-28 text-slate-200">Email ID</label>
+          <input type="email" name="email" placeholder="Enter your email address" class="input-field" />
+        </div>
+        <div class="flex items-start">
+          <label for="message" class="basis-28 text-slate-200">Message</label>
+          <textarea name="message" placeholder="Enter your message here" class="input-field"></textarea>
+        </div>
+        <button type="submit" class="primary-btn ms-24 mt-3 rounded-md text-slate-200">Submit</button>
+      </form>
+    </section>
+
+    <div class="h-28 bg-white max-lg:h-10">
+      <div class="rev-across bg-primary h-full"></div>
+    </div>
+    <section class="bg-primary py-6">
+      <div class="flex flex-wrap justify-center gap-5 italic max-sm:gap-2">
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <h3 class="max-sm:text-sm">care@vistaar.media</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <h3 class="max-sm:text-sm">info@chaltifirtidukan</h3>
+        </div>
+      </div>
+      <div class="flex justify-center gap-6 py-2 max-sm:gap-3 text-blue-300">
+        <div class="flex items-center gap-2">
+          <img src="./images/icons/phone-call.png" class="h-4 w-4 object-contain" alt="phone" />
+          <a href="tel:+918076234044">+91 8076234044</a>
+        </div>
+        <span class="font-bold">|</span>
+        <div class="flex items-center gap-2">
+          <img src="./images/icons/old-typical-phone.png" class="h-4 w-4 object-contain" alt="phone" />
+          <a href="tel:+911204151246">+91 120 415 1246</a>
+        </div>
+        <span class="font-bold">|</span>
+        <div class="flex items-center gap-2">
+          <img src="./images/icons/phone-call.png" class="h-4 w-4 object-contain" alt="phone" />
+          <a href="tel:+917303488667">+91 7303488667</a>
+        </div>
+      </div>
+      <address class="mx-auto w-fit"> Unit 901, Tower B, ITHUMB TOWER, Block A, Industrial Area Sector 62, Noida Uttar
+        Pradesh 201309 </address>
+      <div class="flex justify-center gap-2 mt-4">
+        <img src="images/icons/youtube.svg" class="w-8 aspect-square" alt="youtube" />
+        <img src="images/icons/instagram.svg" class="w-6 aspect-square" alt="instagram" />
+        <img src="images/icons/facebook.svg" class="w-6 aspect-square" alt="facebook" />
+      </div>
+    </section>
+  </div>
+  <script src="./script.js" type="text/javascript"></script>
+</body>
+
 </html>
